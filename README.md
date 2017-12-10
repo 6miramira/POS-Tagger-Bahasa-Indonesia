@@ -7,25 +7,22 @@ Corpus yang digunakan terdiri dari 1 juta kalimat Bahasa Indonesia, didapat dari
 
 Cara penggunaan :
 1. Clone repository ini menggunakan Git
-	command : git clone https://github.com/ahmadzainala/nlp_ngram.git
+	command : git clone https://github.com/6miramira/POS-Tagger-Bahasa-Indonesia.git
 	
-2. Ubah config base_url pada applocation/config/config > base_url tempat menyimpan di htdocs
+2. Ubah config base_url pada application/config/config > base_url tempat menyimpan di htdocs
 
-3. Gunakan apache / xampp, kemudian buka localhost/apache anda di url browser. Contoh : http://localhost/nlp_ngram/index.php
-
-
-a. Mencari tahu probabilitas suatu bigram
-   - Pada segmen form "Cek Probabilitas Bigram", masukkan kata pertama dan kata kedua yang ingin dicari 
-     probabilitasnya, kemudian hasil yang diinginkan akan tampil pada section "Hasil" di sebelah kanan.
-
-b. Generate kalimat berdasarkan kata pertama
-   - Input kata pertama dan jumlah kalimat yang diinginkan pada segmen form "Generator Kalimat". Hasilnya       akan muncul di section sebelah kanan.
-
-c. Cek 10 besar n-gram : masukkan n yang diinginkan pada field di segmen form "Cek 10 Besar N-Gram"
-
-d. Generator Kalimat Random : klik tombol Generate, hasilnya akan dapat dilihat pada section "Hasil" di sebelah kanan.
+3. Gunakan apache / xampp, kemudian buka localhost/apache anda di url browser. Contoh : http://localhost/pos_tag/index.php
 
 
-Note : 
-- Tidak bisa menggunakan semua segmen form dalam sekali waktu.
-- Gunakan data yang lebih variatif dan lebih banyak untuk menyempurnakan generator kalimat.
+I/O Testing
+   - Input satu kalimat bahasa Indonesia, baik diakhiri maupun tidak diakhiri tanda baca titik (.).
+   - Output berupa kalimat masukan beserta POS Tag untuk setiap katanya.
+   - Selamat mencoba!
+   - Please tell me if something wrong.
+   
+   
+   
+Note :
+   - Bisa menggunakan corpus lain dengan format seperti berikut:
+       [kata] [tag]
+       [kata] [tag]
